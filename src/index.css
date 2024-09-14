@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+  .slideC {
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    width: 252px;
+    height: 202px;
+    margin: 0 auto;
+  
+  }
+  
+  .slide {
+    width: 252px;
+    height: 202px;
+    transition: transform 500ms ease 0s, opacity 500ms ease 0s,
+      visibility 500ms ease 0s;
+    position: absolute;
+    top: 0;
+    border-radius: 12px;
+  }
+  
+  /* 3D reflection effect */
+  .reflection {
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    bottom: -40px;
+    border-radius: 12px;
+    transition: transform 500ms ease 0s, opacity 500ms ease 0s,
+      visibility 500ms ease 0s;
+  }
+  
+  .slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .sliderContent {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 30px;
+    align-items: flex-start;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  
+  .sliderContent h2 {
+    margin: 16px 0;
+  }
+  .sliderContent p {
+    margin: 0;
+    margin-bottom: 16px;
+  }
+  
+  /* normal css  */
+  
+  body {
+    
+    min-height: 100vh;
+    
+    background: #111;
+  }
+  
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  
+  /* normal css  */
+  
