@@ -31,7 +31,7 @@ const Celebration = () => {
       )}
       <button disabled={isCelebrating}
         onClick={handleCelebrate}
-        className=" active:scale-75 text-white rounded-xl shadow-lg text-7xl  transition-transform transform hover:scale-105"
+        className=" active:scale-75 text-white rounded-xl mt-5 md:mt-0 shadow-lg text-7xl  transition-transform transform hover:scale-105"
       >
         🎉
       </button>
