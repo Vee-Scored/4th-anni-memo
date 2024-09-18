@@ -6,7 +6,7 @@ const HeroText = () => {
   const milliSec = now - anniDate;
   const year = parseInt(milliSec / (1000 * 60 * 60 * 24 * 365.25));
   return (
-    <div className="border text-justify rounded-lg text-red-50 font-semibold sm:leading-10 leading-7 px-5 py-5">
+    <div data-aos="fade-in" className="border text-justify rounded-lg text-red-50 font-semibold sm:leading-10 leading-7 px-5 py-5">
       Dear my lovely Chitthway, <br />
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       It's a lovely day of our relationship. We've passed {year} years with some

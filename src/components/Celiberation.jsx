@@ -1,5 +1,7 @@
+
 import React, { useEffect, useState } from 'react';
 import Confetti from 'react-confetti';
+import Model from './Model';
 
 const Celebration = () => {
   const [isCelebrating, setIsCelebrating] = useState(false);
@@ -20,7 +22,8 @@ const Celebration = () => {
   return (
     <div className="flex flex-col items-center justify-center">
       {isCelebrating && (
-        <Confetti 
+        <>
+          <Confetti 
           friction={1}
           numberOfPieces={2000}
           recycle={false}
@@ -28,6 +31,8 @@ const Celebration = () => {
           height={10000}
           gravity={0.2}
         />
+          <Model bool={isCelebrating}/>
+        </>
       )}
       <button disabled={isCelebrating}
         onClick={handleCelebrate}

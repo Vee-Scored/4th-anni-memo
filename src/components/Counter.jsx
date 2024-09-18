@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 import TextTransition, { presets } from "react-text-transition";
 import Container from "./Container";
-
-function Counter() {
+import { AOS } from "aos";
+function Counter(props) {
   const [count, setCount] = useState(0);
+
 
   const content = [];
   const anniDate = new Date(2020, 8, 19);
@@ -25,6 +26,7 @@ function Counter() {
   };
 
   useEffect(() => {
+    
     const interval = setInterval(() => {
       setCount((c) => (c + 1) % content.length);
     }, 3000);
@@ -45,7 +47,7 @@ function Counter() {
   
 
   return (
-    <div >
+    <div data-aos={props.animation} >
       <div className=" border-2 shadow-lg bg-red-50 rounded-lg w-60  mx-auto min-h-[425px]   pt-3 mt-5">
         <TextTransition
           direction="down"
