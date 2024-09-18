@@ -16,7 +16,7 @@ const Model = ({ bool }) => {
   return (
     isVisible && (
       <div className="fixed flex z-50 flex-col items-center justify-center bg-[rgba(0,0,0,0.2)] top-0 bottom-0 right-0 left-0">
-        <div className="z-50 px-5 py-3 rounded-lg bg-white animate-fadeIn">
+        <div className="z-50 px-5 min-w-[300px] py-3 rounded-lg bg-white animate-fadeIn">
           <p className="text-center py-1 text-2xl font-mono">Celebration!</p>
           <p className="text-center py-1 text-2xl font-serif font-semibold">4th Anniversary</p>
           <p className="text-center py-1 text-xl font-semibold">of</p>
